@@ -34,7 +34,7 @@ The first step in creating a conceptual database model for an e-commerce website
 9. **Product and order Item :** A many-to-one relationship can be used to define the relationship between a product and an order item. Several order items can be related to the same product, which can be the case for multiple goods in various orders.
 9. **Cart and Customer :** Each customer only have one shopping cart that they use to store products they intend to buy, hence the relationship between the cart and the customer can be regarded as a one-to-one relationship.
 
-![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.001.png)
+![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.001.png)
 
 -Payment is a weak entity 
 
@@ -120,11 +120,11 @@ UML diagram of Proposed E commerce website model
 
 **Address** (AddressID, pin code, city name, state)    Primary key: AddressID 
 
-**Shipment** (ShipmentID, CustomerID , OrderID ,Shipment Date, Address(City,      State, Country, Zip code)) ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.002.png)
+**Shipment** (ShipmentID, CustomerID , OrderID ,Shipment Date, Address(City,      State, Country, Zip code)) ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.002.png)
 
 *Forign key: CustomerID* 
 
-*Forign key: OrderID ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.003.png)*
+*Forign key: OrderID ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.003.png)*
 
 **Order** (OrderID, Order Date, Order Price, Order\_itemID, PaymentID) *Forign key: Order\_itemID* 
 
@@ -132,35 +132,35 @@ UML diagram of Proposed E commerce website model
 
 **Order\_item** (Order\_itemID, Quantity, Price, ProductID) *Forign key: ProductID* 
 
-**Product** (ProductID, Price, Stock, CategoryID) ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.004.png)*Forign key: ProductID* 
+**Product** (ProductID, Price, Stock, CategoryID) ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.004.png)*Forign key: ProductID* 
 
 **Category** (CategoryID, Name) 
 
-**Payment** (PaymentID, Payment method, Payment Date, Amount, ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.005.png)CustomerID) 
+**Payment** (PaymentID, Payment method, Payment Date, Amount, ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.005.png)CustomerID) 
 
 *Primary key: CustomerID* 
 
-**Cart** (CartID, Quantity, ProductID) ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.006.png)*Forign key: ProductID* 
+**Cart** (CartID, Quantity, ProductID) ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.006.png)*Forign key: ProductID* 
 
-**Wishlist** (WishlistID, ProductID) ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.007.png)*Forign key: ProductID* 
+**Wishlist** (WishlistID, ProductID) ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.007.png)*Forign key: ProductID* 
 
 **Up to 3.5 Normalized form of above relational model as given below** 
 
 1. Customer (CustomerID, Name, Email, Billing phone,cityname) 
 1. Address (AddressID, Pin, City, State, Country, Zip code) 
-1. Shipment  (ShipmentID,  OrderID,AddressID) ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.008.png)
+1. Shipment  (ShipmentID,  OrderID,AddressID) ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.008.png)
    1. Foreign key: CustomerID 
    1. Foreign key: OrderID 
    1. Foreign key: AdressID 
 1. Order (customerID,Product,ProductID) 
 1. Payment (PaymentID, Payment method,Payment value,) 
-1. Cart ( CustomerID, ProductID) ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.009.png)![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.010.png)
+1. Cart ( CustomerID, ProductID) ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.009.png)![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.010.png)
 - *Foreign key: CustomerID* 
 - *Foreign key: ProductID* 
-7. Wishlist ( CustomerID, ProductID) ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.011.png)![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.012.png)
+7. Wishlist ( CustomerID, ProductID) ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.011.png)![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.012.png)
 - *Foreign key: CustomerID* 
 - *Foreign key: ProductID* 
-8. Product (ProductID, Product, Brand, Category) ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.013.png)
+8. Product (ProductID, Product, Brand, Category) ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.013.png)
 
 In this normalized structure: 
 
@@ -183,7 +183,7 @@ JOIN orders o ON p.productID = o.productID
 
 GROUP BY p.category limit 10; 
 
-![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.014.png)
+![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.014.png)
 
 Total Sales by Product Category: This query aims to identify the product categories that generate the most sales by calculating the total sales for each category. This information can be used to make informed decisions about inventory management, product development, and marketing strategies. ![ref1]
 
@@ -197,9 +197,9 @@ JOIN product p ON o.productID = p.productID
 
 GROUP BY c.cutomerID limit 10; 
 
-![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.016.png)
+![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.016.png)
 
-Average Order Value by Customer: This query calculates the average order value for each customer, providing insights into customer purchasing behavior and spending patterns. This information can be used to identify high-value customers and tailor marketing strategies accordingly. ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.017.png)
+Average Order Value by Customer: This query calculates the average order value for each customer, providing insights into customer purchasing behavior and spending patterns. This information can be used to identify high-value customers and tailor marketing strategies accordingly. ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.017.png)
 
 **Top 10 customers by order count:** 
 
@@ -209,9 +209,9 @@ order by quantity desc
 
 LIMIT 10; 
 
-![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.018.png)
+![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.018.png)
 
-Top 10 Customers by Order Count: This query identifies the top 10 customers who have placed the most orders, revealing the most loyal and engaged customer base. This information can be used to focus customer retention efforts and develop targeted loyalty programs. ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.019.png)
+Top 10 Customers by Order Count: This query identifies the top 10 customers who have placed the most orders, revealing the most loyal and engaged customer base. This information can be used to focus customer retention efforts and develop targeted loyalty programs. ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.019.png)
 
 **Average order value by payment method:** 
 
@@ -223,9 +223,9 @@ JOIN product p ON o.productID = p.productID
 
 GROUP BY pm.payment\_method; 
 
-![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.020.png)
+![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.020.png)
 
-Average Order Value by Payment Method: This query analyzes the average order value associated with different payment methods, providing insights into customer preferences and the effectiveness of payment options. This information can be used to optimize payment gateways and enhance customer checkout experiences. ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.021.png)
+Average Order Value by Payment Method: This query analyzes the average order value associated with different payment methods, providing insights into customer preferences and the effectiveness of payment options. This information can be used to optimize payment gateways and enhance customer checkout experiences. ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.021.png)
 
 **Top 10 most abandoned items in carts:** 
 
@@ -243,11 +243,11 @@ ORDER BY abandoned\_count DESC
 
 LIMIT 10; 
 
-![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.022.png)
+![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.022.png)
 
 Top 10 Most Abandoned Items in Carts: This query identifies the products that are most frequently added to carts but not purchased, revealing potential conversion issues or product abandonment patterns. This information can be used to improve product recommendations, optimize product listings, and enhance cart abandonment recovery strategies. 
 
-**Customer lifetime value (CLTV) for each customer: ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.023.png)**
+**Customer lifetime value (CLTV) for each customer: ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.023.png)**
 
 SELECT c.cutomerID, SUM(o.quantity \* p.costprice) AS total\_spent FROM customer c 
 
@@ -257,9 +257,9 @@ JOIN product p ON o.productID = p.productID
 
 GROUP BY c.cutomerID order by total\_spent desc limit 10; 
 
-![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.024.png)
+![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.024.png)
 
-Customer Lifetime Value (CLTV) for Each Customer: This query identifies the top 10 customers with the highest lifetime value, providing insights into the most profitable and loyal customer segments. This information can be used to develop targeted customer retention strategies and optimize marketing campaigns. ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.025.png)
+Customer Lifetime Value (CLTV) for Each Customer: This query identifies the top 10 customers with the highest lifetime value, providing insights into the most profitable and loyal customer segments. This information can be used to develop targeted customer retention strategies and optimize marketing campaigns. ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.025.png)
 
 **Profit from each product** 
 
@@ -269,7 +269,7 @@ inner join product as p on o.productID = p.productID
 
 limit 10; 
 
-![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.026.png)
+![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.026.png)
 
 Profit from Each Product: This query calculates the profit generated by each product by subtracting the cost price from the payment value. This information can be used to identify the most profitable products and prioritize inventory management and marketing efforts accordingly. ![ref1]
 
@@ -287,9 +287,9 @@ GROUP BY p.productID, p.product
 
 order by wishlist\_count desc limit 10; 
 
-![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.027.png)
+![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.027.png)
 
-Product Conversion Rate from Wishlist to Purchase: This query analyzes the conversion rate of products from wishlists to purchases, providing insights into the effectiveness of product recommendations and customer engagement strategies. This information can be used to optimize product listings, improve product discovery, and enhance cart abandonment recovery techniques. ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.028.png)
+Product Conversion Rate from Wishlist to Purchase: This query analyzes the conversion rate of products from wishlists to purchases, providing insights into the effectiveness of product recommendations and customer engagement strategies. This information can be used to optimize product listings, improve product discovery, and enhance cart abandonment recovery techniques. ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.028.png)
 
 **Determine the top 5 brands with the highest total sales.** 
 
@@ -303,9 +303,9 @@ ORDER BY Total\_Sales\_Value DESC
 
 Limit 10; 
 
-![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.029.png)
+![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.029.png)
 
-Top 5 Brands with the Highest Total Sales: This query identifies the top 5 brands that generate the most sales, revealing the most successful and popular brands. This information can be used to negotiate better deals with suppliers, develop targeted marketing campaigns, and enhance brand positioning strategies. ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.030.png)
+Top 5 Brands with the Highest Total Sales: This query identifies the top 5 brands that generate the most sales, revealing the most successful and popular brands. This information can be used to negotiate better deals with suppliers, develop targeted marketing campaigns, and enhance brand positioning strategies. ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.030.png)
 
 2\. Determine the average shipping time for orders placed during a specific time period 
 
@@ -315,85 +315,85 @@ CEILING(min(DATEDIFF(s.shipmentDate, o.orderDate))) as Minimum\_shipping\_time\_
 
 JOIN shipments s ON o.orderID = s.orderID; 
 
-![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.031.png)
+![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.031.png)
 
 Average Shipping Time for Orders: This query calculates the average, minimum, and maximum shipping time for orders, providing insights into order fulfillment efficiency and potential delivery issues. This information can be used to optimize shipping processes, set realistic delivery expectations, and improve customer satisfaction. 
 
 ![ref2] ![ref3]
 
-`        `![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.034.png)     ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.035.png)![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.036.png)![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.037.png)![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.038.png)![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.039.png)![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.040.png)![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.041.png)![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.042.png)![ref4]![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.044.png)![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.045.png)![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.046.png)![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.047.png)
+`        `![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.034.png)     ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.035.png)![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.036.png)![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.037.png)![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.038.png)![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.039.png)![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.040.png)![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.041.png)![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.042.png)![ref4]![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.044.png)![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.045.png)![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.046.png)![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.047.png)
 
-` `![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.048.png)![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.049.png)
+` `![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.048.png)![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.049.png)
 
-![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.050.png) ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.051.png) ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.052.png) ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.053.png) ![ref4] ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.054.png) ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.055.png) ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.056.png) ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.057.png) ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.058.png) ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.059.png) ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.060.png) ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.061.png) ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.062.png) ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.063.png) ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.064.png)
+![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.050.png) ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.051.png) ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.052.png) ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.053.png) ![ref4] ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.054.png) ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.055.png) ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.056.png) ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.057.png) ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.058.png) ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.059.png) ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.060.png) ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.061.png) ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.062.png) ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.063.png) ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.064.png)
 
-` `![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.065.png)![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.066.png)
+` `![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.065.png)![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.066.png)
 
-![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.067.jpeg)
+![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.067.jpeg)
 
-` `![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.068.png)![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.069.png)
+` `![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.068.png)![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.069.png)
 
-![ref5] ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.071.png)
+![ref5] ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.071.png)
 
-![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.072.jpeg)
+![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.072.jpeg)
 
-` `![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.073.png)![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.074.png)
+` `![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.073.png)![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.074.png)
 
-![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.075.jpeg)
+![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.075.jpeg)
 
-` `![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.076.png)![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.077.png)
+` `![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.076.png)![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.077.png)
 
-![ref5] ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.078.png)
+![ref5] ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.078.png)
 
 
-` `![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.079.png)![ref2]
+` `![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.079.png)![ref2]
 
-![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.080.jpeg)
+![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.080.jpeg)
 
-` `![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.081.png)![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.082.png)
+` `![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.081.png)![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.082.png)
 
-![ref5] ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.083.png)
+![ref5] ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.083.png)
 
 ![ref2] ![ref3]
 
-![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.084.jpeg)
+![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.084.jpeg)
 
-` `![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.085.png)![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.086.png)
+` `![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.085.png)![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.086.png)
 
-![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.087.jpeg)
+![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.087.jpeg)
 
-![ref5] ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.088.png)
+![ref5] ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.088.png)
 
-` `![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.089.png)![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.090.png)
+` `![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.089.png)![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.090.png)
 
-![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.091.jpeg)
+![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.091.jpeg)
 
-![ref5] ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.092.png)
+![ref5] ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.092.png)
 
 
 Data Management for Analytics
-# Data Model for E -Commerce ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.093.png)
+# Data Model for E -Commerce ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.093.png)
 # Website![ref6]
 Group 5
 
-- Rohit Reddy![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.095.png)![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.096.png)
+- Rohit Reddy![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.095.png)![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.096.png)
 - Rakshith Dharmappa
 
-## Agenda ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.097.png)![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.098.png)![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.099.png)
+## Agenda ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.097.png)![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.098.png)![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.099.png)
 01\. Introduction 02. Entities 
 
-The database captures user  ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.100.png)details, orders, products,  carts, wishlists, order  specifics, and payment  information for an online  shopping platform. ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.101.png)![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.102.png)![ref6]
+The database captures user  ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.100.png)details, orders, products,  carts, wishlists, order  specifics, and payment  information for an online  shopping platform. ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.101.png)![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.102.png)![ref6]
 
-03\. ER and UML 04. Conceptual DB  05. SQL & NoSQL and Its Normalized  ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.103.jpeg)![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.104.jpeg)form 
+03\. ER and UML 04. Conceptual DB  05. SQL & NoSQL and Its Normalized  ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.103.jpeg)![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.104.jpeg)form 
 
-![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.105.jpeg)
-## Problem Statement: - ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.106.jpeg)
+![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.105.jpeg)
+## Problem Statement: - ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.106.jpeg)
 ## Introduction - ![ref7]
 Welcome to our E-commerce Database Model  Presentation. Our system is tailored to manage  user details, orders, product listings with prices  and stocks, carts, Wishlist, and payment  information for seamless online shopping. The  model showcases entities like Customers,  Products, Orders, Payments, Shipments, and  their relationships. It ensures efficient  ![ref8]operations by allowing users to register, place  orders, add products to carts or wishlists, and  finalize payments. Join us as we explore how  our model optimizes the online shopping  experience. 
 
 2. Entities
 
-•This entity stands for users of the online shopping platform who register and create accounts in order to place orders. ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.109.png)Customer
+•This entity stands for users of the online shopping platform who register and create accounts in order to place orders. ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.109.png)Customer
 
 - Describes the assortment of goods that may be purchased via the platform.
 
@@ -423,20 +423,20 @@ Wishlist
 
 3. ER and UML
 
-![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.110.png)  ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.111.png)![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.112.png)
+![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.110.png)  ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.111.png)![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.112.png)
 
-4. Converting our Conceptual D B ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.113.jpeg)to Relational Data Base and to Its Normalized form ![ref7]
+4. Converting our Conceptual D B ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.113.jpeg)to Relational Data Base and to Its Normalized form ![ref7]
 
-But Why ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.114.png)![ref8]![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.115.png)
-## **Data Integrity:** Relational  ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.116.png)
+But Why ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.114.png)![ref8]![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.115.png)
+## **Data Integrity:** Relational  ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.116.png)
 ## databases ensure data integrity by enforcing  **Reduction of Anomalies:** Normalization minimizes data anomalies like constraints like primary keys, foreign keys, 
-and relationships. This prevents anomalies  insertion, update, and deletion anomalies, ensuring the database remains![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.117.png)
+and relationships. This prevents anomalies  insertion, update, and deletion anomalies, ensuring the database remains![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.117.png)
 
 and inconsistencies in data. in a consistent state.
 
 **Scalability:** Normalized databases are **Easier Maintenance:** With a well-normalized generally more scalable. As data grows, 
 
-relational database, maintenance becomes  the structure can accommodate changes more straightforward. It's easier to ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.118.jpeg) and expansions without significant troubleshoot issues and maintain the overall  alterations, maintaining efficiency.
+relational database, maintenance becomes  the structure can accommodate changes more straightforward. It's easier to ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.118.jpeg) and expansions without significant troubleshoot issues and maintain the overall  alterations, maintaining efficiency.
 
 health of the database.
 
@@ -456,7 +456,7 @@ Normalization allows for smaller  Updates or changes made in one place
 
 tables that can be joined efficiently,  reflect uniformly across related tables, leading to faster query execution. ensuring consistency.
 ## 05(A) SQL
-Total sales by product category: **Average order value by customer ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.119.png)**
+Total sales by product category: **Average order value by customer ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.119.png)**
 
 SELECT p.category, SUM(o.quantity \* p.costprice) AS  SELECT c.cutomerID, 
 
@@ -486,7 +486,7 @@ c.`Name`
 
 ORDER BY p.category, total\_orders DESC
 ## 05(B) NoSQL
-**The average selling price of each product The total quantity of each product ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.120.png)**
+**The average selling price of each product The total quantity of each product ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.120.png)**
 
 **sold**
 
@@ -502,29 +502,29 @@ avgSellingPrice: { $avg: db.{cu$sgtroomuepr:da{ta\_.iadg:gr"e$gpartoed(u[ctName"
 
 use('ecomsite’) use('ecomsite') use('ecomsite')
 
-db.customerdata.aggregate([{  db.customerdata.aggregate([{  db.customerdata.aggregate([ $group: { \_id: "$productName",  $group: { \_id: "$productName",  { "$group": { "\_id": totalRevenue: { $sum: {  profit: { $sum: { $subtract: [  "$Brand", "totalSold": { $multiply: [ "$Quantity",  "$sellingPrice", "$Cost\_Price" ]  "$sum": "$Quantity" } } }, "$sellingPrice" ] } } } }]) } } } }]) { "$sort": { "totalSold": -1![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.121.png)
+db.customerdata.aggregate([{  db.customerdata.aggregate([{  db.customerdata.aggregate([ $group: { \_id: "$productName",  $group: { \_id: "$productName",  { "$group": { "\_id": totalRevenue: { $sum: {  profit: { $sum: { $subtract: [  "$Brand", "totalSold": { $multiply: [ "$Quantity",  "$sellingPrice", "$Cost\_Price" ]  "$sum": "$Quantity" } } }, "$sellingPrice" ] } } } }]) } } } }]) { "$sort": { "totalSold": -1![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.121.png)
 
-} },![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.122.png)
+} },![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.122.png)
 
 { "$limit": 10 } ])
 
-![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.123.png)
+![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.123.png)
 
-![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.124.png)
+![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.124.png)
 
-![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.125.png)
+![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.125.png)
 
-![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.126.png)
+![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.126.png)
 
-- FOSSIL • NIKE![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.127.png)![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.128.png)![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.129.png)![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.130.png)
+- FOSSIL • NIKE![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.127.png)![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.128.png)![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.129.png)![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.130.png)
 - Titan • Campus
   - FOSSIL
-  - Titan![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.131.png)
+  - Titan![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.131.png)
 
-![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.132.png) ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.133.png)
+![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.132.png) ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.133.png)
 
-![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.134.png)
-## Summary ![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.135.png)![ref7]
+![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.134.png)
+## Summary ![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.135.png)![ref7]
 The conceptual database model for an e-commerce platform comprises entities like  
 
 Customer, Product, Order, Payment, Shipment, Cart, Wishlist, and Category, each  
@@ -538,35 +538,35 @@ aiding in organization. Reference data includes static customer and product info
 while transactional data captures dynamic details like orders, payments, and shipments, 
 
 crucial for the system's real-time operation and effective e-commerce functionality.
-## Thank you![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.136.jpeg)![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.137.png)
+## Thank you![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.136.jpeg)![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.137.png)
 - Rakshith Dharmappa
 - Rohith Reddy
 
-![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.138.png)
+![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.138.png)
 
-![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.139.png)
+![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.139.png)
 
-![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.140.jpeg)
+![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.140.jpeg)
 
-![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.141.jpeg)
+![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.141.jpeg)
 
-![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.142.jpeg)
+![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.142.jpeg)
 
-![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.143.jpeg)
+![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.143.jpeg)
 
-![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.144.jpeg)
+![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.144.jpeg)
 
-![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.145.jpeg)
+![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.145.jpeg)
 
-![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.146.jpeg)
+![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.146.jpeg)
 
-![](./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.147.jpeg)
+![](./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.147.jpeg)
 
-[ref1]: ./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.015.png
-[ref2]: ./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.032.png
-[ref3]: ./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.033.png
-[ref4]: ./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.043.png
-[ref5]: ./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.070.png
-[ref6]: ./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.094.png
-[ref7]: ./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.107.png
-[ref8]: ./src/./src/.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.108.png
+[ref1]: ./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.015.png
+[ref2]: ./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.032.png
+[ref3]: ./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.033.png
+[ref4]: ./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.043.png
+[ref5]: ./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.070.png
+[ref6]: ./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.094.png
+[ref7]: ./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.107.png
+[ref8]: ./src/Aspose.Words.97ab8d6c-5a46-493a-a322-7b8e9759d5b8.108.png
